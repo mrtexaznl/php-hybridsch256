@@ -21,3 +21,10 @@ Unix/OSX
     ; Enable scrypt extension module
     extension=hybridsch256.so
 ````
+
+
+to install system-wide:
+sudo make install
+
+also, locate the php.ini file in this way:
+php -i | grep "php.ini"
