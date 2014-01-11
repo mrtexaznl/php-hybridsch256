@@ -1,7 +1,10 @@
 PHP_ARG_ENABLE(hybridsch256, whether to enable HybridScryptHash256 (hybridsch256) support,
 [ --enable-hybridsch256, Enable HybridScryptHash256 (hybridsch256) support])
 
-if test $PHP_SCRYPT != "no"; then
+if test $PHP_HYBRIDSCH256 != "no"; then
+
+    PHP_REQUIRE_CXX()
+
     PHP_ADD_INCLUDE(crypto)
     PHP_ADD_BUILD_DIR(crypto)
 
