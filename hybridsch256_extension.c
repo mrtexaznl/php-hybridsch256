@@ -16,7 +16,7 @@ PHP_FUNCTION(hybrid_scrypt_hash256);
  
 // list of custom PHP functions provided by this extension
 // set {NULL, NULL, NULL} as the last record to mark the end of list
-static function_entry hybridsch256_functions[] = {
+static zend_function_entry hybridsch256_functions[] = {
     PHP_FE(hybrid_scrypt_hash256, NULL)
     {NULL, NULL, NULL}
 };
